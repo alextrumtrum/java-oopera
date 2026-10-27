@@ -1,9 +1,8 @@
 package ru.practicum.oopera;
 
-public class Main {
+public class Theatre {
 
     public static void main(String[] args) {
-        System.out.println("Поехали!");
         Actor actor1 = new Actor("Name1", "Surname1", Gender.MALE, 180);
         Actor actor2 = new Actor("Name2", "Surname2", Gender.MALE, 181);
         Actor actor3 = new Actor("Name3", "Surname3", Gender.MALE, 182);
@@ -28,11 +27,11 @@ public class Main {
 
         printShows(show, opera, ballet);
 
-        opera.swapActor(actor2, actor1);
-        show.swapActor(actor1, actor2);
+        opera.swapActor(actor1, "Surname2");
+        show.swapActor(actor3, "Surname1");
 
         printShows(show, opera, ballet);
-        ballet.swapActor(actor2, actor3);
+        ballet.swapActor(actor2, "Noname");
 
         opera.printLibrettoText();
         ballet.printLibrettoText();

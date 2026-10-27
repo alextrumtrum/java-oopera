@@ -1,4 +1,8 @@
 package ru.practicum.oopera;
 
-public class Choreographer {
+public class Choreographer extends Person {
+
+    public Choreographer(String name, String surname, Gender gender) {
+        super(name, surname, gender);
+    }
 }
